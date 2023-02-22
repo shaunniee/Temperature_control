@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #979797;
+  padding: 3rem;
+  border-radius: 2rem;
+  position: relative;
+}
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  &__1,
+  &__2 {
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    color: white;
+    font-weight:bold;
+    transition: all 0.3s;
+
+
+  }
+  &__1{
+    background-color: rgb(115, 115, 255);
+    &:hover{
+        background-color: darken($color: rgb(115, 115, 255), $amount: 50);
+        
+    }
+  }
+  &__2{
+    background-color: rgb(255, 115, 115);
+    &:hover{
+        background-color: darken($color: rgb(255, 115, 115), $amount: 50);
+        
+    }
+  }
+}
+.emoji{
+    position: absolute;
+    font-size: 3rem;
+    top: 20px;
+    right: 20px;
+}
