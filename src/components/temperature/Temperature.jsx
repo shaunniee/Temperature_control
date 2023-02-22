@@ -11,6 +11,7 @@ function Temperature() {
   ]
   let max_temperature = 30;
   let min_temperature = -30;
+
   const redVal =
     (255 / (max_temperature - min_temperature)) *
     (temperature - min_temperature);
@@ -18,14 +19,14 @@ function Temperature() {
     (255 / (max_temperature - min_temperature)) *
     (max_temperature - temperature);
   const decreamentTemp = () => {
-    if (temperature === -30) {
+    if (temperature === min_temperature) {
       return;
     } else {
       setTemperauture(temperature - 1);
     }
   };
   const increamentTemp = () => {
-    if (temperature === 30) {
+    if (temperature === max_temperature) {
       return;
     } else {
       setTemperauture(temperature + 1);
