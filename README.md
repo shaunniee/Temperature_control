@@ -6,5 +6,8 @@
 <li>Based on the value of temperature the background color changes blue being the coldest which is -30deg c and red being hottest which is +30 deg c</li>
 <li>There are 3 emojis which define the mood of the person according to temperature.Here we have used if condition to render this.🥶 - used to indicate cold temterature that is below 5 degree c,🥵 - this is used to indicate hot temperature which is >20 degree c,😄-used to indicate ideal temperature</li>
 </ul>
+</br>
+</br>
+URL : https://tempcontrolsvd.netlify.app/
 
 
